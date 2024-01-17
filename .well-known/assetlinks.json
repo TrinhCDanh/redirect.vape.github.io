@@ -1,0 +1,28 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.twssolutions.customer",
+            "sha256_cert_fingerprints": [
+                "D3:EE:D3:B4:8E:81:7D:64:C5:F2:12:B5:A9:10:09:B9:FC:04:45:E9:E1:59:11:E6:53:43:ED:F6:30:E5:40:41",
+                "06:E4:3B:23:91:3B:13:76:04:17:E3:29:12:00:5C:8D:8F:3B:D0:12:B0:E8:99:1D:62:DD:89:28:D0:DF:E7:19"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.twssolutions.pos",
+            "sha256_cert_fingerprints": [
+                "D3:EE:D3:B4:8E:81:7D:64:C5:F2:12:B5:A9:10:09:B9:FC:04:45:E9:E1:59:11:E6:53:43:ED:F6:30:E5:40:41",
+                "32:1B:F4:9B:E3:A8:C9:2A:09:1D:A5:5A:13:59:A5:86:11:5E:54:CB:D3:1D:95:82:52:14:18:74:47:42:44:25"
+            ]
+        }
+    }
+]
