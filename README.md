@@ -1,0 +1,1 @@
+# redirect.vape.github.io
