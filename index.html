@@ -8,6 +8,15 @@
 </head>
 
 <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var linkElement = document.getElementById("yourLinkId");
+        if (linkElement) {
+            linkElement.click();
+        }
+    });
+</script>
+
+<script>
     function redirect() {
         myURL();
         var result = document.getElementById("result");
