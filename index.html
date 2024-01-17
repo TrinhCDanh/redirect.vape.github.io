@@ -5,49 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Redirect</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var linkElement = document.getElementById("yourLinkId");
-        if (linkElement) {
-            linkElement.click();
-        }
-    });
-</script>
-
-<script>
-    function redirect() {
-        myURL();
-        var result = document.getElementById("result");
-        result.innerHTML = "<b> The page will redirect after delay of 5 seconds";
-    }
-
-    function myURL() {
-        var linkElement = document.getElementById("yourLinkId");
-        linkElement.click();
-
-
-        // window.location = 'twss-customer://twssolutions.us';
-        // // window.open("twss-customer://twssolutions.us", "_blank");
-        // const url =
-        //     "intent://twssolutions.us/#Intent;scheme=twss-customer;package=com.twssolutions.customer;action=android.intent.action.VIEW;end";
-        // window.open(url, "_blank");
-    }
-
-    function redirect2() {
-        setTimeout(myURL2, 5000);
-        var result = document.getElementById("result2");
-        result.innerHTML = "<b> The page will redirect after delay of 5 seconds";
-    }
-
-    function myURL2() {
-        window.location.href = 'https://google.com';
-    }
-</script>
 
 <body>
-    <a id="yourLinkId" href="twss-customer://twssolutions.us">twss-customer://twssolutions.us</a>
+    <!-- <a id="yourLinkId" href="twss-customer://twssolutions.us">twss-customer://twssolutions.us</a>
     </br>
     <a href="twss-customer://twssolutions.us/?referral=twss01">twss-customer://twssolutions.us/?referral=twss01</a>
     </br>
@@ -68,7 +31,27 @@
 
     <button onclick="redirect2()">Click to Redirect 2</button>
     </br>
-    <p id="result2"></p>
+    <p id="result2"></p> -->
+    <div class="center">
+        <img class="image-center" src="./assets/iphone.png" />
+        <div class="referral-code-wrapper">
+            <div class="referral-code-content">
+                <p id="referral-code-content__text" class="referral-code-content__text">123ABC</p>
+            </div>
+            <div class="referral-code-button" onclick="onCopyReferralCode()">
+                <p class="referral-code-button__text">COPY</p>
+            </div>
+        </div>
+        <div class="button">
+            <p>Download android app</p>
+        </div>
+        <div class="button">
+            <p>Download iOS app</p>
+        </div>
+    </div>
+    <a style="opacity: 0;" id="yourLinkId" href="twss-customer://twssolutions.us">twss-customer://twssolutions.us</a>
 </body>
+
+<script src="./main.js"></script>
 
 </html>
