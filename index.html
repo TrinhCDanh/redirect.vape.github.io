@@ -16,7 +16,10 @@
 
     function myURL() {
         // window.location.href = 'twss-customer://twssolutions.us';
-        window.open("twss-customer://twssolutions.us", "_blank");
+        // window.open("twss-customer://twssolutions.us", "_blank");
+        const url =
+            "intent://twssolutions.us/#Intent;scheme=twss-customer;package=com.twssolutions.customer;end";
+        window.location.replace(url);
     }
 
     function redirect2() {
