@@ -38,12 +38,15 @@ body {
     text-align: center;
 }
 
+.button-hidden {
+    display: none;
+}
+
 .button .button-text {
     text-decoration: none;
     color: white;
     font-size: 14px;
 }
-
 
 .referral-code-wrapper {
     display: flex;

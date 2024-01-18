@@ -6,6 +6,17 @@ const PLATFORM = {
     LINUX: "Linux",
 }
 
+// ==== Check and hide button download for android or ios
+let platform = onGetOS();
+if (platform == PLATFORM.ANDROID) {
+    let buttonIOS = document.getElementById("button-ios");
+    buttonIOS.classList.add("button-hidden");
+}
+if (platform == PLATFORM.IOS) {
+    let buttonAndroid = document.getElementById("button-android");
+    buttonAndroid.classList.add("button-hidden");
+}
+
 // ==== Get referral code from url parameter
 const searchParams = new URLSearchParams(window.location.search);
 let referral = '';
@@ -29,10 +40,8 @@ function onRedirect() {
         var linkElement = document.getElementById("yourLinkId");
         if (linkElement) {
             linkElement.click();
-            window.close();
         }
     } catch (error) {
-        let platform = onGetOS();
         switch (platform) {
             case PLATFORM.ANDROID:
                 window.location = 'https://twss-ohio-public-storage.s3.us-east-2.amazonaws.com/mobile-app/TWSSolutions_Customer.apk'; // android download link
