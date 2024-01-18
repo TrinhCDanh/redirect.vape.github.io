@@ -29,6 +29,7 @@ function onRedirect() {
         var linkElement = document.getElementById("yourLinkId");
         if (linkElement) {
             linkElement.click();
+            window.close();
         }
     } catch (error) {
         let platform = onGetOS();
