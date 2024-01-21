@@ -27,7 +27,7 @@ if (searchParams.has('referral')) {
     result.innerHTML = referral;
 
     let redirectLink = document.getElementById("yourLinkId");
-    redirectLink.setAttribute("href", "twss-customer://twssolutions.us?referral=" + referral);
+    redirectLink.setAttribute("href", "twss-pos://twssolutions.us?referral=" + referral);
 }
 
 // ==== Auto redirect go to app (Sign up page) or download link
@@ -53,10 +53,10 @@ function onRedirect() {
                 break;
         }
     }
-    // window.location = 'twss-customer://twssolutions.us';
-    // // window.open("twss-customer://twssolutions.us", "_blank");
+    // window.location = 'twss-pos://twssolutions.us';
+    // // window.open("twss-pos://twssolutions.us", "_blank");
     // const url =
-    //     "intent://twssolutions.us/#Intent;scheme=twss-customer;package=com.twssolutions.customer;action=android.intent.action.VIEW;end";
+    //     "intent://twssolutions.us/#Intent;scheme=twss-pos;package=com.twssolutions.customer;action=android.intent.action.VIEW;end";
     // window.open(url, "_blank");
 }
 
